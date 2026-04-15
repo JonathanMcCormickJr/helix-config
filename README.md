@@ -11,7 +11,10 @@ For an introduction to the Helix IDE, please see the [Helix website](https://hel
     sudo apt update
     sudo apt install build-essential curl pkg-config libssl-dev
     ```
-2. Install the Rust toolchain via Rustup: `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`.
+2. Install the Rust toolchain via Rustup:
+    ```bash
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    ```
 3. Install essential Rust components:
     ```bash
     rustup component add rust-analyzer rustfmt clippy
@@ -34,8 +37,14 @@ For an introduction to the Helix IDE, please see the [Helix website](https://hel
     cp config.toml ~/.config/helix/config.toml
     cp languages.toml ~/.config/helix/languages.toml
     ```
-7. Verify that Helix can see `rust-analyzer` and all grammars: `hx --health rust`.
-8. Start Helix and enjoy! `hx .`
+7. Verify that Helix can see `rust-analyzer` and all grammars:
+   ```bash
+   hx --health rust
+   ```
+8. Start Helix and enjoy!
+    ```bash
+    hx .
+    ```
 
 ## Optional productivity tools
 
