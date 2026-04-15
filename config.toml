@@ -14,6 +14,9 @@ color-modes = true
 bufferline = "multiple"
 true-color = true
 rulers = [100]
+auto-save = true
+idle-timeout = 50
+completion-trigger-len = 1
 
 [editor.cursor-shape]
 insert = "bar"
@@ -22,8 +25,9 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
-git-ignore = false
-git-exclude = false
+# Note: git-ignore and git-exclude are enabled (default) so that the file
+# picker does not index the `target/` directory in Rust projects, which can
+# contain millions of files and cause significant slowdowns.
 
 [editor.indent-guides]
 render = true
