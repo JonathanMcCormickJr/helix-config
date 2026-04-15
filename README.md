@@ -19,12 +19,15 @@ For an introduction to the Helix IDE, please see the [Helix website](https://hel
     ```bash
     rustup component add rust-analyzer rustfmt clippy
     ```
-4. Install the [SOMETHING] debug adapter for DAP (in-editor debugging support):
+4. Install LLDB for DAP (in-editor debugging support):
     ```bash
-    cargo install --locked cargo-binstall
-    sudo apt-get install lldb
+    sudo apt install lldb
     ```
-    Then add the `codelldb` binary location (typically `~/.cargo/bin`) to your `PATH` if it is not already there.
+    Helix uses `lldb-dap` (included with LLDB) as its default Rust debug adapter. On Ubuntu the binary is sometimes installed with a version suffix (e.g. `lldb-dap-18`). If `hx --health rust` reports the debugger as unavailable, create an unversioned symlink:
+    ```bash
+    # Replace 18 with the version installed on your system
+    sudo ln -s /usr/bin/lldb-dap-18 /usr/local/bin/lldb-dap
+    ```
 5. Install Helix (https://docs.helix-editor.com/package-managers.html#ubuntudebian):
     ```bash
     sudo add-apt-repository ppa:maveonair/helix-editor
