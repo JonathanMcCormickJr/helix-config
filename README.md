@@ -19,10 +19,10 @@ For an introduction to the Helix IDE, please see the [Helix website](https://hel
     ```bash
     rustup component add rust-analyzer rustfmt clippy
     ```
-4. Install the `codelldb` debug adapter for DAP (in-editor debugging support):
+4. Install the [SOMETHING] debug adapter for DAP (in-editor debugging support):
     ```bash
     cargo install --locked cargo-binstall
-    cargo binstall --no-confirm codelldb
+    sudo apt-get install lldb
     ```
     Then add the `codelldb` binary location (typically `~/.cargo/bin`) to your `PATH` if it is not already there.
 5. Install Helix (https://docs.helix-editor.com/package-managers.html#ubuntudebian):
