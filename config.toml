@@ -1,0 +1,44 @@
+# Jonathan's Helix Config
+# 2026-04-15
+# License: Unlicense (public domain)
+# 
+# This file can be placed in a spot like `~/.config/helix/config.toml` 
+# to enable these settings for all projects for a given Ubuntu user. 
+
+theme = "everforest_dark"
+
+[editor]
+line-number = "relative"
+cursorline = true
+color-modes = true
+bufferline = "multiple"
+true-color = true
+rulers = [100]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+git-ignore = false
+git-exclude = false
+
+[editor.indent-guides]
+render = true
+character = "╎"
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "file-modification-indicator"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-type"]
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 25
+max-indent-retain = 40
+wrap-indicator = "↪ "
