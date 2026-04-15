@@ -1,4 +1,4 @@
-# helix-config
+# helix-config 🧬
 
 My personal Helix IDE [config](./config.toml). 
 
