@@ -1,0 +1,22 @@
+# Jonathan's Helix Language Config
+# 2026-04-15
+# License: Unlicense (public domain)
+#
+# This file can be placed at `~/.config/helix/languages.toml`
+# to configure language server and debugger settings for all projects.
+
+[[language]]
+name = "rust"
+
+[language-server.rust-analyzer.config]
+# Run clippy on save for richer diagnostics (instead of bare `cargo check`).
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
+# Enable proc-macro expansion so types from derive macros resolve correctly.
+[language-server.rust-analyzer.config.procMacro]
+enable = true
+
+# Build scripts are needed for crates that generate code at compile time.
+[language-server.rust-analyzer.config.cargo]
+buildScripts.enable = true
