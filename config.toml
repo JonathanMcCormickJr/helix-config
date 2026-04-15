@@ -5,7 +5,7 @@
 # This file can be placed in a spot like `~/.config/helix/config.toml` 
 # to enable these settings for all projects for a given Ubuntu user. 
 
-theme = "everforest_dark"
+theme = "autumn_night"
 
 [editor]
 line-number = "relative"
