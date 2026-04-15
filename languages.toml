@@ -7,6 +7,7 @@
 
 [[language]]
 name = "rust"
+formatter = { command = "rustfmt" }
 
 [language-server.rust-analyzer.config]
 # Run clippy on save for richer diagnostics (instead of bare `cargo check`).
