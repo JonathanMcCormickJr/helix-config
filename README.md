@@ -52,5 +52,10 @@ For an introduction to the Helix IDE, please see the [Helix website](https://hel
 ## Optional productivity tools
 
 - **[Zellij](https://zellij.dev/) or [tmux](https://github.com/tmux/tmux/wiki)** — Helix has no built-in terminal, so a terminal multiplexer is strongly recommended for running `cargo build`/`cargo test` in a split pane alongside the editor.
+    - ```bash
+      cargo install --locked zellij
+      rustup update
+      zellij
+      ``` 
 - **[cargo-nextest](https://nexte.st/)** — A faster, more ergonomic test runner (`cargo install cargo-nextest`).
 - **[direnv](https://direnv.net/)** — Per-project environment variable management, useful for custom `RUSTFLAGS`, feature flags, or toolchain overrides via `.envrc` files (`sudo apt install direnv`).
