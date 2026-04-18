@@ -70,4 +70,4 @@ For an introduction to the Helix IDE, please see the [Helix website](https://hel
       ```bash
       cargo nextest run && cargo test --doc
       ```
-- **[direnv](https://direnv.net/)** — Per-project environment variable management, useful for custom `RUSTFLAGS`, feature flags, or toolchain overrides via `.envrc` files (`sudo apt install direnv`).
+
