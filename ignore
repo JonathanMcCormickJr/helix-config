@@ -1,0 +1,23 @@
+# Helix ignore file
+# to be located at `~/.config/helix/ignore`
+
+# Rust
+target/
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# General build artifacts
+dist/
+build/
+.next/
+.turbo/
+
+# OS junk
+.DS_Store
