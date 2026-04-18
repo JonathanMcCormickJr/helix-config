@@ -58,7 +58,7 @@ For an introduction to the Helix IDE, please see the [Helix website](https://hel
       rustup update
       zellij
       ```
-- **[Alacrity](https://alacritty.org/) — a terminal with support for copy-pasting in a compatible way with Zellij
+- **[Alacritty](https://alacritty.org/)** — a terminal with support for copy-pasting in a compatible way with Zellij. i.e. run `alacritty` instead of Bash.
     - ```bash
       cargo install alacritty
       ``` 
