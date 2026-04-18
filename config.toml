@@ -1,5 +1,6 @@
+
 # Jonathan's Helix Config
-# 2026-04-15
+# 2026-04-18
 # License: Unlicense (public domain)
 # 
 # This file can be placed in a spot like `~/.config/helix/config.toml` 
@@ -25,9 +26,11 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
-# Note: git-ignore and git-exclude are enabled (default) so that the file
-# picker does not index the `target/` directory in Rust projects, which can
-# contain millions of files and cause significant slowdowns.
+git-ignore = false      # don't use .gitignore to filter picker results
+git-global = false      # don't use global git excludes either
+# git-exclude stays default (true) — it's harmless and project-local
+# Note: we exclude heavy build dirs via ~/.config/helix/ignore instead,
+# so .env and other gitignored-but-useful files remain visible.
 
 [editor.indent-guides]
 render = true
