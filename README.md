@@ -57,6 +57,10 @@ For an introduction to the Helix IDE, please see the [Helix website](https://hel
       cargo install --locked zellij
       rustup update
       zellij
+      ```
+- **[Alacrity](https://alacritty.org/) — a terminal with support for copy-pasting in a compatible way with Zellij
+    - ```bash
+      cargo install alacritty
       ``` 
 - **[cargo-nextest](https://nexte.st/)** — A faster, more ergonomic test runner (`cargo install cargo-nextest`).
     - ```bash
