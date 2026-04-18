@@ -39,6 +39,7 @@ For an introduction to the Helix IDE, please see the [Helix website](https://hel
     mkdir -p ~/.config/helix
     cp config.toml ~/.config/helix/config.toml
     cp languages.toml ~/.config/helix/languages.toml
+    cp ignore ~/.config/helix/ignore
     ```
 7. Verify that Helix can see `rust-analyzer` and all grammars:
    ```bash
