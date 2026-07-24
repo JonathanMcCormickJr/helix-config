@@ -21,3 +21,8 @@ enable = true
 # Build scripts are needed for crates that generate code at compile time.
 [language-server.rust-analyzer.config.cargo]
 buildScripts.enable = true
+
+[[language]]
+name = "html"
+formatter = { command = "dprint", args = ["fmt", "--stdin", "html"] }
+auto-format = true
